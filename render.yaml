@@ -1,12 +1,11 @@
 
 services:
-  - type: static
+  - type: web
     name: qc-defect-prediction-system
+    runtime: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     routes:
       - type: rewrite
         source: /*
         destination: /index.html
-
-
