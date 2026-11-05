@@ -243,7 +243,7 @@ export const ZillowPortalView: React.FC<ZillowPortalViewProps> = ({
         <div className="flex items-center gap-2.5 mx-auto xl:mx-0">
           <div className="w-8 h-8 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 shadow-2xs shrink-0 bg-slate-900">
             <img
-              src="/src/assets/images/vision_sensor_logo_1790964273856.jpg.jpeg"
+              src="/images/vision_sensor_logo_1790964273856.jpg.jpeg"
               alt="Quality Camera Sensor"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
