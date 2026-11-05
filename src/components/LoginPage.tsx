@@ -123,7 +123,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
         {/* Brand Logo */}
         <div className="w-14 h-14 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-md shadow-indigo-500/20 mx-auto mb-4 bg-slate-900">
           <img
-            src="/src/assets/images/vision_sensor_logo_1790964273856.jpg"
+            src="/images/vision_sensor_logo_1790964273856.jpg.jpeg"
             alt="Quality Control Vision Sensor"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover"
