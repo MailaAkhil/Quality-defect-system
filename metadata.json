@@ -1,0 +1,6 @@
+{
+  "name": "Quality Control Defect Prediction System",
+  "description": "Predictive industrial quality control system with process parameter logging, ML defect prediction engine, inspection triage workflow, and analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
