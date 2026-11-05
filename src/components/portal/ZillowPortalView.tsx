@@ -951,12 +951,14 @@ export const ZillowPortalView: React.FC<ZillowPortalViewProps> = ({
           <footer className="border-t border-slate-200 dark:border-slate-800 py-10 px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-400 space-y-2">
             <div className="flex items-center justify-center gap-2">
               <div className="w-5 h-5 rounded overflow-hidden border border-slate-300 dark:border-slate-700 bg-slate-900">
-                <img
-                  src="/src/assets/images/vision_sensor_logo_1790964273856.jpg"
-                  alt="Quality Sensor"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover"
-                />
+
+                  <img
+  src="/images/vision_sensor_logo_1790964273856.jpg.jpeg"
+  alt="Quality Sensor"
+  referrerPolicy="no-referrer"
+  className="w-full h-full object-cover"
+/>
+                
               </div>
               <span className="font-bold text-slate-700 dark:text-slate-300">
                 Quality Checker Platform
