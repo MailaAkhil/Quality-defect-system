@@ -499,7 +499,7 @@ export const ZillowPortalView: React.FC<ZillowPortalViewProps> = ({
           <div className="relative h-[380px] sm:h-[460px] md:h-[500px] w-full overflow-hidden flex items-center justify-center">
             {/* Background Panoramic Photo */}
             <img
-              src="/src/assets/images/manufacturing_hero_banner_1791368079175.jpg"
+              src=""*/images/factory.jpg""
               alt="High-Tech Manufacturing Plant"
               referrerPolicy="no-referrer"
               className="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.05]"
