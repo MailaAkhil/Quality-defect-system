@@ -1,119 +1,184 @@
+
 # 🏭 Quality Control Defect Prediction System
 
-An ML-powered quality control system designed to predict the likelihood of manufacturing defects using production process parameters. The system helps identify high-risk production batches, improve inspection efficiency, and support data-driven quality management.
+An intelligent web-based Quality Control Defect Prediction System designed to estimate manufacturing defect risk using production process parameters. The system helps identify high-risk production batches, improve inspection efficiency, and support data-driven quality management.
 
-## 🎯 Problem Statement
+## 🌐 Live Demo
 
-Manual quality inspection on manufacturing production lines is time-consuming and inconsistent. This can allow defective products to reach customers, resulting in increased production costs and reduced product quality.
+🚀 **[Click Here to View the Live Application](https://qc-defect-prediction-system.onrender.com/)**
 
-This project aims to develop a machine learning-based system that predicts the likelihood of defects using production process parameters and identifies high-risk batches for further inspection.
+Explore the application and its quality control dashboard.
 
-## 🚀 Objectives
+---
+
+## 📌 Problem Statement
+
+Manual quality inspection in manufacturing industries is time-consuming and may produce inconsistent results. This can allow defective products to reach customers, increasing production costs and reducing product quality.
+
+This project aims to develop a system that analyzes manufacturing process parameters, estimates defect risk, and identifies high-risk production batches for further inspection.
+
+## 🎯 Objectives
 
 - Record production process parameters for each manufacturing batch.
-- Predict the probability of defects using a machine learning model.
+- Estimate the probability of manufacturing defects.
 - Identify and flag high-risk production batches.
-- Track inspection results for future model improvement.
-- Provide an analytics dashboard to monitor production quality.
+- Track inspection results and batch status.
+- Provide an analytics dashboard for monitoring production quality.
 - Support faster and more consistent quality inspection.
 
 ## 🧩 System Modules
 
 ### 1. Authentication & Role Management
-Provides user authentication and role-based access to the system.
+- User authentication.
+- Role-based access management.
+- Secure access to application modules.
 
 ### 2. Process Parameter Logging
-Allows users to enter and manage production process parameters for different batches.
+- Record manufacturing batch details.
+- Store production parameters.
+- Manage batch information.
 
 ### 3. Defect Prediction Engine
-Uses a machine learning classification model to predict defect likelihood based on production parameters.
+- Analyze production process parameters.
+- Estimate defect probability.
+- Classify batches based on risk level.
+- Generate prediction results.
 
 ### 4. Inspection Workflow
-Helps quality control teams identify high-risk batches, record inspection results, and track inspection status.
+- Identify high-risk batches.
+- Flag batches for inspection.
+- Record actual inspection results.
+- Track inspection status and feedback.
 
 ### 5. Analytics Dashboard
-Displays production quality information, defect statistics, batch-level predictions, and inspection analytics.
+- Display production batch information.
+- Monitor defect risk levels.
+- Visualize quality-related statistics.
+- Track inspection activities.
 
 ## 🔄 System Workflow
 
 ```text
-             User / Student
-                   |
-                   v
-       Authentication & Role Management
-                   |
-                   v
-        Process Parameter Logging
-                   |
-                   v
-          Defect Prediction Engine
-                   |
-                   v
-            Inspection Workflow
-                   |
-                   v
-           Analytics Dashboard
-                   |
-                   v
+       User / Administrator
+                |
+                v
+    Authentication & Role Management
+                |
+                v
+       Process Parameter Logging
+                |
+                v
+        Defect Prediction Engine
+                |
+                v
+         Risk Classification
+                |
+                v
+          Inspection Workflow
+                |
+                v
+          Analytics Dashboard
+                |
+                v
              Final Output
 ```
 
 ## 🤖 Machine Learning Integration
 
-The system uses machine learning classification techniques to estimate the likelihood of manufacturing defects.
+The project is designed around manufacturing defect prediction using classification techniques.
 
-**Model Workflow:**
+### Model Workflow
 
 1. Collect manufacturing production data.
-2. Perform data preprocessing and cleaning.
-3. Select relevant production parameters as input features.
-4. Train a classification model using the dataset.
-5. Predict defect probability for new production batches.
-6. Identify high-risk batches for quality inspection.
+2. Clean and preprocess the dataset.
+3. Select relevant production parameters.
+4. Train and evaluate a classification model.
+5. Use the model to estimate defect probability for new batches.
+6. Classify batches according to predicted risk.
+7. Support inspection decisions using prediction results.
 
-**Expected Model Output:**
+### Expected Model Output
 
 - Defect probability.
 - Predicted defect status.
 - Batch risk classification.
 - Inspection recommendation.
 
-*Note: The actual algorithm and evaluation metrics depend on the trained model and experimental results.*
-
-## 🛠️ Technology Integration
-
-| Domain | Application |
-|---|---|
-| Machine Learning | Classification-based defect prediction |
-| Full Stack Development | Web-based quality control dashboard |
-| Software Engineering | Modular architecture and documented APIs |
-| Operating Systems | Concurrent processing of production batch data |
+**Note:** The final algorithm and evaluation metrics should be documented after confirming the actual model implementation and experimental results.
 
 ## 📊 Dataset
 
 **Dataset Source:** Kaggle
 
-The manufacturing quality dataset is used to train and evaluate the machine learning model for identifying defects based on production-related parameters.
+The manufacturing quality dataset is intended for model development and evaluation.
+
+Dataset attributes may include production-related parameters such as:
+
+- Temperature
+- Pressure
+- Vibration
+- Machine speed
+- Cycle time
+- Humidity
+- Cooling rate
+
+The selected features depend on the actual dataset used in the project.
+
+## 🛠️ Technology Stack
+
+| Domain | Technologies / Application |
+|---|---|
+| Frontend | React, TypeScript |
+| Styling | Tailwind CSS |
+| Backend | Node.js, Express.js |
+| Database | MySQL |
+| Machine Learning | Classification-based defect prediction |
+| Data Processing | Python (if used for model training) |
+| Version Control | Git and GitHub |
+| Deployment | Render |
+
+*Update this table if your actual implementation uses different technologies.*
+
+## 🗄️ Database Integration
+
+The application uses MySQL to store manufacturing batch information.
+
+**Database Name:** `qc_factory_db`
+
+**Table Name:** `machine_batches`
+
+The database is designed to store:
+
+- Batch identification details.
+- Manufacturing process parameters.
+- Defect probability and risk level.
+- Predicted defect information.
+- Inspection status.
+- Actual inspection results.
+- Inspector feedback.
 
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
 
+Install the following before running the project:
+
 - Node.js
 - npm
-- Python (if the ML model runs separately)
+- MySQL Server
 - Git
+- Python (if required for separate ML model execution)
 
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/MailaAkhil/Quality-defect-system.git
 ```
 
 ### 2. Navigate to the Project Folder
 
 ```bash
-cd quality-control-defect-prediction-system
+cd Quality-defect-system
 ```
 
 ### 3. Install Dependencies
@@ -124,54 +189,103 @@ npm install
 
 ### 4. Configure Environment Variables
 
-Create a `.env.local` file in the project root and add the required environment variables.
+Create the required environment file in the project root.
+
+Example `.env` configuration for local MySQL:
+
+```env
+MYSQL_HOST=127.0.0.1
+MYSQL_PORT=3306
+MYSQL_USER=root
+MYSQL_PASSWORD=your_mysql_password
+MYSQL_DATABASE=qc_factory_db
+```
+
+If your application uses Gemini API, configure:
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-Only configure the Gemini API key if your application uses the Gemini API. Add other required database or backend variables according to your project configuration.
+**Important:** Replace the example values with your actual credentials. Never upload `.env` files, database passwords, or API keys to GitHub.
 
-**Important:** Never upload API keys, passwords, or secret environment files to GitHub.
+### 5. Create the Database
 
-### 5. Run the Application
+Open MySQL and execute:
+
+```sql
+CREATE DATABASE qc_factory_db;
+```
+
+Create the required `machine_batches` table using the database schema provided in the project.
+
+### 6. Run the Application
 
 ```bash
 npm run dev
 ```
 
-Open the local URL displayed in your terminal to access the application.
+Open the local URL displayed in your terminal.
+
+*Note: If the backend runs as a separate process, start it using the backend command defined in `package.json`.*
 
 ## 📁 Project Structure
 
 ```text
-quality-control-defect-prediction-system/
+Quality-defect-system/
 │
 ├── public/
+│
 ├── src/
 │   ├── components/
 │   ├── pages/
 │   ├── services/
+│   ├── server/
 │   └── ...
 │
-├── .env.local
+├── .env
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
-└── README.md
+├── README.md
+└── ...
 ```
 
-*Note: The folder structure is illustrative. Actual folders may differ depending on the implementation.*
+*Note: This is an illustrative structure. Actual directories and files may differ.*
+
+## 🔐 Security
+
+- Keep database credentials in environment variables.
+- Never expose API keys in frontend code.
+- Add secret environment files to `.gitignore`.
+- Validate user inputs before processing.
+- Use appropriate authentication and authorization.
 
 ## 🔮 Future Enhancements
 
 - Real-time production data integration.
 - Improved prediction accuracy through model optimization.
 - Advanced batch monitoring and reporting.
-- Automated inspection alerts for high-risk batches.
+- Automated alerts for high-risk batches.
 - Historical defect trend analysis.
 - Continuous model improvement using inspection feedback.
+
+## 👨‍💻 Project Information
+
+**Project Title:** Quality Control Defect Prediction System
+
+**Domain:** Machine Learning and Full Stack Development
+
+**Project Type:** Academic Project
+
+**Team:** Codebreakerz
+
+**Institution:** Rajeev Gandhi Memorial College of Engineering and Technology (RGMCET), Nandyal.
 
 ## 📄 License
 
 This project is developed for academic and educational purposes.
+
+---
+
+⭐ If you find this project interesting, consider giving the repository a star!
